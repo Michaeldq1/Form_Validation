@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form>
+      <label for="email">
+        <span>Email:</span>
+        <input type="email" id="email" name="email" required />
+        <span class="validation"></span>
+      </label>
+
+      <label for="country"
+        >Country:
+        <input type="text" id="country" name="country" required />
+        <span class="validation"></span>
+      </label>
+
+      <label for="zipcode"
+        >Zip Code:
+        <input
+          type="text"
+          id="zipcode"
+          name="zipcode"
+          pattern="[0-9]{5}"
+          maxlength="5"
+          inputmode="numeric"
+          required
+        />
+        <span class="validation"></span>
+      </label>
+
+      <label for="password"
+        >Password:
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+        />
+        <span class="validation"></span>
+      </label>
+
+      <label for="confirm-password"
+        >Confirm Password:
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+        <span class="validation"></span>
+      </label>
+
+      <input id="submit-button" type="submit" value="Confirm" />
+    </form>
+    <script src="bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  padding: 3em;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+label,
+input {
+  width: 250px;
+}
+
+.invalid {
+  border: 2px solid red;
+  background-color: #fdd;
+  border-radius: 4px;
+}
+
+.valid {
+  border: 2px solid green;
+  background-color: #defade;
+  border-radius: 4px;
+}
+
+.validation {
+  width: 100%;
+  height: 14px;
+  font-size: 80%;
+  color: red;
+}
+
+.error-active {
+  padding: 3em;
+}
